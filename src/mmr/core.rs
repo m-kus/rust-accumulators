@@ -45,7 +45,7 @@ pub enum MMRError {
     InvalidPeaksCountForElements,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct MMR {
     pub store: Arc<dyn Store>,
     pub hasher: Arc<dyn Hasher>,

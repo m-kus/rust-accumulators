@@ -5,7 +5,7 @@ use super::{Store, StoreError};
 /// A counter that is stored in a store
 ///
 /// It is used to keep track of the number of times for specific keys are used
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct InStoreCounter {
     /// The store that the counter is stored in
     pub store: Arc<dyn Store>,
